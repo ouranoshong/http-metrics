@@ -1,0 +1,19 @@
+language: go
+
+go:
+  - "1.17"
+  - "1.16"
+  - "1."
+  - tip
+
+os:
+  - linux
+  - osx
+
+sudo: false
+
+install:
+  - echo "skipping travis default"
+
+script:
+  - make test-all
